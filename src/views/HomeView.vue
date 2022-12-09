@@ -4,6 +4,7 @@
     color="teal"
     grow
   >
+    <!-- これNavBar.vueとかにしてcomponents/に入れたほうがよくないか -->
     <v-btn>
       <span>Recents</span>
 
@@ -28,8 +29,9 @@
 export default {
   name: "HomePage",
   components: {
-    data: () => ({ value: 1 }),
-  }
+
+  },
+  data: () => ({ value: 1 }),
 }
 </script>
 
