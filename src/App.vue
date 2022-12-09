@@ -1,13 +1,11 @@
 <template>
     <div>
-        <Header></Header>
-        <Body></Body>
-        <Body></Body>
+        <Homeview></Homeview>
     </div>
 </template>
 
 <script>
-import Homeview from './views/Homeview.vue';
+import Homeview from './views/HomeView.vue';
 
 export default {
     name: 'App',
