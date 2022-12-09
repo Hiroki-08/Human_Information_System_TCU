@@ -1,34 +1,50 @@
 <template>
-  <v-card style="width: 375px; height: 667px;">
-    <v-bottom-navigation color="primary" v-model="isActive" absolute="true">
-      <v-btn value="menu01">
-        <span>menu01</span>
-        <v-icon>mdi-history</v-icon>
+    <v-bottom-navigation
+      v-model="value"
+      :background-color="color"
+      dark
+      shift
+    >
+      <v-btn>
+        <span>Video</span>
+  
+        <v-icon>mdi-television-play</v-icon>
       </v-btn>
-
-      <v-btn value="menu02">
-        <span>menu02</span>
-        <v-icon>mdi-heart</v-icon>
+  
+      <v-btn>
+        <span>Music</span>
+  
+        <v-icon>mdi-music-note</v-icon>
       </v-btn>
-      
-      <v-btn value="menu03">
-        <span>menu03</span>
-        <v-icon>mdi-map-marker</v-icon>
+  
+      <v-btn>
+        <span>Book</span>
+  
+        <v-icon>mdi-book</v-icon>
+      </v-btn>
+  
+      <v-btn>
+        <span>Image</span>
+  
+        <v-icon>mdi-image</v-icon>
       </v-btn>
     </v-bottom-navigation>
-  </v-card>
-</template>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  </template>
 
 <script>
-    new Vue({
-        el: '#app',
-        vuetify: new Vuetify(),
-        data: {
-            isActive: 'menu01',
-            toggle: true
+  export default {
+    data: () => ({ value: 1 }),
+
+    computed: {
+      color () {
+        switch (this.value) {
+          case 0: return 'blue-grey'
+          case 1: return 'teal'
+          case 2: return 'brown'
+          case 3: return 'indigo'
+          default: return 'blue-grey'
         }
-    });
+      },
+    },
+  }
 </script>
