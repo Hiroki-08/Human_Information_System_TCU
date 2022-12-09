@@ -1,32 +1,30 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+	<v-card style="width: 375px; height: 667px;">
+		<v-bottom-navigation color="primary" v-model="isActive" absolute="true">
+			<v-btn value="menu01">
+				<span>menu01</span>
+				<v-icon>mdi-history</v-icon>
+			</v-btn>
+
+			<v-btn value="menu02">
+				<span>menu02</span>
+				<v-icon>mdi-heart</v-icon>
+			</v-btn>
+
+			<v-btn value="menu03">
+				<span>menu03</span>
+				<v-icon>mdi-map-marker</v-icon>
+			</v-btn>
+		</v-bottom-navigation>
+	</v-card>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+	new Vue({
+		el: '#app',
+		vuetify: new Vuetify(),
+			data: {
+				isActive: 'menu01'
+			}
+		});
+</script>
