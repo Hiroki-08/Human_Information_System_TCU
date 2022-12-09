@@ -1,20 +1,11 @@
-
 <template>
-  <v-app>
-    <v-main>
-      <!-- 基本は v-main の中に記述するはず     -->
-      <!-- コンポーネントは htmlタグみたいに入れられる -->
-
-      <Homeview/>
-      <v-container>
-        <router-view/>
-      </v-container>
-    </v-main>
-  </v-app>
+    <div>
+        <Homeview></Homeview>
+    </div>
 </template>
 
 <script>
-import Homeview from './views/Homeview.vue';
+import Homeview from '@/views/HomeView.vue';
 
 export default {
     name: 'App',
@@ -22,7 +13,6 @@ export default {
         Homeview
     },
     data: () => ({
-      //
     }),
 };
 </script>
