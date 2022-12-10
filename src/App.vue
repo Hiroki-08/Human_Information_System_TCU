@@ -1,17 +1,21 @@
 <template>
     <div>
-        <Homeview></Homeview>
+        <HomeView></HomeView>
+        <NaviBar></NaviBar>
+
     </div>
 </template>
 
 <script>
-import Homeview from '@/views/HomeView.vue';
+import NaviBar from '@/components/NaviBar.vue';
+import HomeView from "@/views/HomeView.vue"
 
 export default {
     name: 'App',
-    components: { // App.vue（ここ）のtemplateタグ内で使うコンポーネントを指定する
-        Homeview
-    },
+    components: {
+    NaviBar,
+    HomeView
+},
     data: () => ({
     }),
 };
