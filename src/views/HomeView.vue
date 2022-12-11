@@ -1,6 +1,7 @@
 <template>
-    <div>Hello World!
-    </div>
+  <v-content>
+    <div>Hello World!</div>
+  </v-content>
 </template>
 
 <script>

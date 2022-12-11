@@ -1,21 +1,22 @@
 <template>
   <v-card flat>
-    <v-toolbar
+    <v-app-bar
+      color="white"
       dense
       flat
-      tile
       fixed
+      width="390px"
     >
       <v-spacer></v-spacer>
 
-      <v-toolbar-title class="gray--text">
+      <v-toolbar-title style="color:orange; font-size:100;">
         Title
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-    </v-toolbar>
-    
+    </v-app-bar>
+
     <v-divider></v-divider>
   </v-card>
 </template>

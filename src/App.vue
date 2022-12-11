@@ -1,12 +1,11 @@
 <template>
   <div style="width: 390px;">
-    <div>
       <TitleBar></TitleBar>
-      <HomeView></HomeView>
+        <v-app>
+          <HomeView style="padding: 10px;"></HomeView>
+        </v-app>
       <NaviBar></NaviBar>
-
     </div>
-  </div>
 </template>
 
 <script>
@@ -19,10 +18,17 @@ export default {
   name: 'App',
   components: {
   TitleBar,
+  HomeView,
   NaviBar,
-  HomeView
+
 },
   data: () => ({
   }),
 };
 </script>
+
+<style>
+  .template{
+      font-family:"meiryo" !important;
+  }
+</style>
