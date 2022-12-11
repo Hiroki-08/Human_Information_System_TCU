@@ -6,10 +6,11 @@
       flat
       fixed
       width="390px"
+      app
     >
       <v-spacer></v-spacer>
 
-      <v-toolbar-title style="color:orange; font-size:20px;">
+      <v-toolbar-title style="color:orange; font-size:20px;" app>
         ホーム
       </v-toolbar-title>
 

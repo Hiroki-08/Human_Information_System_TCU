@@ -9,6 +9,7 @@
       fixed
       grow
       flat
+      app
     >
       <v-divider></v-divider>
 

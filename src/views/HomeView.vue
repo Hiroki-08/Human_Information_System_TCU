@@ -1,4 +1,4 @@
-<template>
+<template app>
   <div>Hello World!</div>
 </template>
 
