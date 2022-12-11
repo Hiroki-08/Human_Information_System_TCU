@@ -1,5 +1,5 @@
 <template>
-  <v-card flat>
+  <v-app>
     <v-app-bar
       color="white"
       dense
@@ -9,8 +9,8 @@
     >
       <v-spacer></v-spacer>
 
-      <v-toolbar-title style="color:orange; font-size:100;">
-        Title
+      <v-toolbar-title style="color:orange; font-size:20px;">
+        ホーム
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -18,7 +18,8 @@
     </v-app-bar>
 
     <v-divider></v-divider>
-  </v-card>
+
+  </v-app>
 </template>
 
 <script>

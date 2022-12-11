@@ -8,6 +8,7 @@
       max-width=390
       fixed
       grow
+      flat
     >
       <v-divider></v-divider>
 
