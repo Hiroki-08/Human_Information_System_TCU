@@ -1,26 +1,32 @@
 <template>
   <v-app>
+    <v-divider></v-divider>
     <v-bottom-navigation
+    class="navi"
       :value="value"
       color="orange"
+      min-width=256
+      max-width=390
+      fixed
       grow
+      
     >
       <v-btn>
         <span>ホーム</span>
 
-        <v-icon>mdi-history</v-icon>
+        <v-icon>mdi-home</v-icon>
       </v-btn>
 
       <v-btn>
         <span>メニュー</span>
 
-        <v-icon>mdi-heart</v-icon>
+        <v-icon>mdi-silverware-fork-knife</v-icon>
       </v-btn>
 
       <v-btn>
         <span>予約</span>
 
-        <v-icon>mdi-map-marker</v-icon>
+        <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
       </v-btn>
 
     </v-bottom-navigation>
@@ -37,5 +43,5 @@ export default {
 }
 </script>
 
-<!-- <style scoped>
-</style> -->
+<style scoped>
+</style>
