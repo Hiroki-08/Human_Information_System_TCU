@@ -10,20 +10,20 @@
       fixed
       grow
     >
-      <v-btn value="home" color="white">
+      <v-btn to="/" value="home" color="white">
         <span style="font-size: 10px">ホーム</span>
 
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn value="menu" color="white">
-        <span>メニュー</span>
+      <v-btn to="/menu" value="menu" color="white">
+        <span style="font-size: 10px">メニュー</span>
 
         <v-icon>mdi-silverware-fork-knife</v-icon>
       </v-btn>
 
-      <v-btn value="book" color="white">
-        <span>予約</span>
+      <v-btn to="/book" value="book" color="white">
+        <span style="font-size: 10px">予約</span>
 
         <v-icon>mdi-checkbox-marked-circle-outline</v-icon>
       </v-btn>
