@@ -1,10 +1,10 @@
 <template>
-  <div>Hello World!</div>
+  <div>It's Menu!</div>
 </template>
 
 <script>
 export default {
-name: "HomeView",
+name: "MenuView",
 components: {
 
 },

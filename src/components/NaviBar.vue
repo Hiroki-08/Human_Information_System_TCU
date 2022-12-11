@@ -1,20 +1,17 @@
 <template>
-  <v-app>
+  <v-main>
     <v-bottom-navigation
       :value="value"
+      flat
       color="orange"
       background-color="blue"
       min-width=256
       max-width=390
       fixed
       grow
-      flat
-      app
     >
-      <v-divider></v-divider>
-
       <v-btn value="home" color="white">
-        <span>ホーム</span>
+        <span style="font-size: 10px">ホーム</span>
 
         <v-icon>mdi-home</v-icon>
       </v-btn>
@@ -32,7 +29,7 @@
       </v-btn>
 
     </v-bottom-navigation>
-  </v-app>
+  </v-main>
 </template>
 
 <script>

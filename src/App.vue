@@ -1,7 +1,6 @@
 <template>
-  <v-app style="width: 390px;height: 500px;">
+  <v-app style="width: 390px;">
     <TitleBar></TitleBar>
-    <v-divider></v-divider>
     <HomeView></HomeView>
     <NaviBar></NaviBar>
   </v-app>
@@ -28,8 +27,5 @@ export default {
 <style>
   .template{
     font-family: "meiryo" !important;
-  }
-  .v-application--wrap{
-    height: 0 !important;
   }
 </style>
