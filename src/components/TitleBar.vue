@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-main style="padding: 0px 0px 0px 0px">
+    <v-main>
       <v-toolbar
-        height=36
+        height=32
         color="white"
         dense
         flat
@@ -12,7 +12,7 @@
       >
         <v-spacer></v-spacer>
 
-        <v-toolbar-title style="color:orange; font-size:20px;" app>
+        <v-toolbar-title style="color:orange; font-size: small;">
           ホーム
         </v-toolbar-title>
 

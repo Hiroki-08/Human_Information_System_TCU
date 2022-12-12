@@ -1,5 +1,5 @@
 <template>
-  <v-main>
+  <v-main >
     <v-bottom-navigation
       :value="value"
       flat
