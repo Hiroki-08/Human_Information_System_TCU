@@ -1,7 +1,8 @@
 <template>
-  <v-main >
+  <v-main>
+    <h2>value: {{ value }}</h2>
     <v-bottom-navigation
-      :value="value"
+      v-model="value1"
       flat
       color="orange"
       background-color="blue"
@@ -39,5 +40,10 @@ export default {
 
   },
   data: () => ({ value: 1 }),
+  methods: {
+    sendToParent() {
+      this.$emit("textForParent", this.value1);
+    }
+  },
 }
 </script>

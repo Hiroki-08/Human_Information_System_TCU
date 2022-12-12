@@ -37,7 +37,7 @@
 
     <h4 class=mt-2>混雑状況</h4>
     <v-card
-      to=""
+      to="/menu"
       flat
       class=ma-2
     >

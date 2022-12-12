@@ -13,8 +13,9 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-title style="color:orange; font-size: small;">
-          ホーム
+          {{ title }}
         </v-toolbar-title>
+        <NaviBar v-on:textForParent="title = $event"></NaviBar>
 
         <v-spacer></v-spacer>
 
@@ -27,12 +28,18 @@
 </template>
 
 <script>
+import NaviBar from './NaviBar.vue';
+
 export default {
   name: "TitleBar",
   components: {
-
+    NaviBar,
   },
-  data: () => ({ value: 1 }),
+  data(){
+    return {
+      title: "" 
+    }
+  },
 }
 </script>
 
