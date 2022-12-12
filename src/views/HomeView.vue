@@ -1,6 +1,28 @@
 <template>
-  <v-main class=ma-2>
-    <h4>日替わりメニュー</h4>
+  <v-main class=mx-2>
+
+    <v-toolbar
+        height=32
+        color="white"
+        dense
+        flat
+        fixed
+        width="390px"
+        app
+      >
+        <v-spacer></v-spacer>
+
+        <v-toolbar-title style="color:orange; font-size: small;">
+          ホーム
+        </v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+    </v-toolbar>
+
+    <v-divider></v-divider>
+
+    <h4 class=mt-2>日替わりメニュー</h4>
 
     <v-sheet>
       <v-slide-group
@@ -39,7 +61,7 @@
     <v-card
       to="/menu"
       flat
-      class=ma-2
+      class=mx-2
     >
       <v-img
         src="@/assets/congestion_situation_1.png"
