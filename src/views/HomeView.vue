@@ -1,5 +1,5 @@
 <template>
-  <v-main class=mx-2>
+  <v-main class=mx-4>
 
     <v-toolbar
         height=32
@@ -7,7 +7,7 @@
         dense
         flat
         fixed
-        width="390px"
+        max-width="390px"
         app
       >
         <v-spacer></v-spacer>
