@@ -4,7 +4,7 @@
       v-model="value"
       flat
       color="orange"
-      background-color="blue"
+      background-color=""
       min-width=256
       max-width=390
       fixed

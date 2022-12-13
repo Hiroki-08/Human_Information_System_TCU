@@ -1,5 +1,5 @@
 <template>
-  <v-app style="width: 390px;">
+  <v-app style="width: 390px; height: 690px;">
 
     <RouterView/>
     <NaviBar></NaviBar>

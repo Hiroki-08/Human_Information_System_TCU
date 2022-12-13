@@ -1,5 +1,5 @@
 <template>
-  <v-main>
+  <v-main class=mx-2>
     <v-toolbar
         height=32
         color="white"
@@ -12,7 +12,7 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-title style="color:orange; font-size: small;">
-          予約状況
+          <b>予約状況</b>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>

@@ -13,7 +13,7 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-title style="color:orange; font-size: small;">
-          ホーム
+          <b>ホーム</b>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -38,6 +38,7 @@
               height="200px"
               src="@/assets/fried_white_fish_cheese_and_fried_squid.jpg"
             ></v-img>
+            <v-card-subtitle class="pa-0">デイリーメニュー</v-card-subtitle>
           </v-card>
         </v-slide-item>
 
@@ -51,6 +52,7 @@
               height="200px"
               src="@/assets/japanese-style_beef_egg_binding.jpg"
             ></v-img>
+            <v-card-subtitle class="pa-0">バラエティーメニュー</v-card-subtitle>
           </v-card>
         </v-slide-item>
         
