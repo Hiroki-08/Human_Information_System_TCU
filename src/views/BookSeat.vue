@@ -9,11 +9,19 @@
       max-width="390px"
       app
     >
+    <v-btn
+      icon
+      to="/book/booktime"
+    >
+      <v-icon>mdi-arrow-left</v-icon>
+    </v-btn>
       <v-spacer></v-spacer>
 
+      <v-continer>
       <v-toolbar-title style="color:orange; font-size: small;">
-        <b>予約状況</b>
+        <b>席選択</b>
       </v-toolbar-title>
+    </v-continer>
 
       <v-spacer></v-spacer>
 
@@ -21,26 +29,19 @@
 
     <v-divider></v-divider>
 
-    <h4 class=mt-2>予約状況</h4>
-    <v-card>
-      <v-card-text>予約はありません</v-card-text>
-    </v-card>
-    <v-btn
-      to="/book/booktime"
-      block
-      class="my-8 white--text"
-      color="orange"
-    >
-      <b>席を予約する</b>
-    </v-btn>
+
+    <h4 class=mt-2>予約可能座席</h4>
+    <v-continer>
 
 
+
+    </v-continer>
   </v-main>
 </template>
 
 <script>
 export default {
-name: "BookView",
+name: "BookSeat",
 components: {
 
 },
