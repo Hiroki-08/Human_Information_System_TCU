@@ -1,6 +1,6 @@
 <template>
   <v-main class=mx-4>
-    <v-toolbar
+    <v-app-bar
         height=32
         color="white"
         dense
@@ -17,7 +17,7 @@
 
         <v-spacer></v-spacer>
 
-    </v-toolbar>
+    </v-app-bar>
 
     <v-divider></v-divider>
 
