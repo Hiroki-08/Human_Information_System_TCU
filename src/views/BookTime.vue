@@ -33,21 +33,34 @@
     <v-continer>
       <v-row>
         <v-col>
-          <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4">
+          <v-btn
+            text
+            block
+            to="/book/booktime/bookseat"
+            x-large
+          >
             12:15~12:50
             <v-spacer></v-spacer>
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
           <v-divider></v-divider>
 
-          <v-btn text block class="pt-6 pb-4">
+          <v-btn
+            text
+            block
+            x-large
+          >
             12:50~13:15
             <v-spacer></v-spacer>
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
           <v-divider></v-divider>
 
-          <v-btn text block class="pt-6 pb-4">
+          <v-btn
+            text
+            block
+            x-large
+          >
             13:15~13:40
             <v-spacer></v-spacer>
             <v-icon>mdi-chevron-right</v-icon>
