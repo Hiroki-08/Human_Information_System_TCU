@@ -1,7 +1,6 @@
 <template>
   <v-main>
     <v-bottom-navigation
-      v-model="value"
       flat
       color="orange"
       background-color=""
@@ -38,6 +37,5 @@ export default {
   components: {
 
   },
-
 }
 </script>
