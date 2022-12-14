@@ -41,17 +41,8 @@ const routes = [
   },
 ]
 
-let routerSettings;
-if (process.env.APP_ENV === 'production') {
-  routerSettings = {
-    routes
-  }
-} else {
-  routerSettings = {
-    mode: 'history',
-    base: process.env.BASE_URL,
-    routes
-  }
+const routerSettings = {
+  routes
 }
 
 const router = new VueRouter(routerSettings)

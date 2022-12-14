@@ -1,6 +1,6 @@
 <template>
   <v-main class=mx-4>
-    <v-toolbar
+    <v-app-bar
       height=32
       color="white"
       dense
@@ -17,25 +17,25 @@
     </v-btn>
       <v-spacer></v-spacer>
 
-      <v-continer>
+      <v-container>
       <v-toolbar-title style="color:orange; font-size: small;">
         <b>席選択</b>
       </v-toolbar-title>
-    </v-continer>
+    </v-container>
 
       <v-spacer></v-spacer>
 
-    </v-toolbar>
+    </v-app-bar>
 
     <v-divider></v-divider>
 
 
     <h4 class=mt-2>予約可能座席</h4>
-    <v-continer>
+    <v-container>
 
 
 
-    </v-continer>
+    </v-container>
   </v-main>
 </template>
 
