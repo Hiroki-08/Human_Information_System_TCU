@@ -70,6 +70,13 @@
       ></v-img>
     </v-card>
 
+    <v-col class="pb-0">
+          <v-card 
+          height="70px"
+          flat
+          ></v-card>
+        </v-col>
+
   </v-main>
 </template>
 

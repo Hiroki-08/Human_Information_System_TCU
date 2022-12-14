@@ -31,23 +31,23 @@
 
     <h4 class=mt-2>予約可能時間</h4>
     <v-continer>
-      <v-row dense>
+      <v-row>
         <v-col>
-          <v-btn text block to="/book/booktime/bookseat">
+          <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4">
             12:15~12:50
             <v-spacer></v-spacer>
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
           <v-divider></v-divider>
 
-          <v-btn text block>
+          <v-btn text block class="pt-6 pb-4">
             12:50~13:15
             <v-spacer></v-spacer>
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
           <v-divider></v-divider>
 
-          <v-btn text block>
+          <v-btn text block class="pt-6 pb-4">
             13:15~13:40
             <v-spacer></v-spacer>
             <v-icon>mdi-chevron-right</v-icon>
