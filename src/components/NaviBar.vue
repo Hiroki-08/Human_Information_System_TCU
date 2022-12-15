@@ -5,7 +5,7 @@
       color="orange"
       background-color=""
       min-width=256
-      max-width=390
+      max-width=690
       fixed
       grow
     >

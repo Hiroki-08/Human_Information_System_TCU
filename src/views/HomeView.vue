@@ -35,6 +35,8 @@
       <v-img src="@/assets/congestion_situation_1.png"></v-img>
     </v-card>
 
+    <h2>{{ $store.state.id }}</h2>
+
     <v-col class="pb-0">
       <v-card height="70px" flat></v-card>
     </v-col>
