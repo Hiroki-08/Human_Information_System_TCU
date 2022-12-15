@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-title style="color:orange; font-size: small;">
-        <b>予約完了</b>
+        <b>混雑状況</b>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -13,25 +13,25 @@
 
     <v-divider></v-divider>
 
-    <h4 class=mt-2>予約完了</h4>
-    <v-card>
-      <v-card-title>12:15~12:50<br>6番席</v-card-title>
-      <v-card-subtitle>を予約しました。</v-card-subtitle>
-    </v-card>
+    <h4 class=mt-2>各座席の混雑状況</h4>
+
+    <v-container>
+      <v-img src="@/assets/congestion_situation_2.png"></v-img>
+    </v-container>
+
     <v-btn to="/" block class="my-8 white--text" color="orange">
       <b>ホーム</b>
     </v-btn>
 
-
   </v-main>
 </template>
-
+  
 <script>
 export default {
-  name: "BookCheck",
+  name: "CongestionView",
   components: {
 
   },
-  data: () => ({ value: 1 }),
+  data: () => ({}),
 }
 </script>

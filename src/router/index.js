@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '@/views/HomeView'
+import CongestionView from "@/views/CongestionView"
 import MenuView from "@/views/MenuView"
 import BookView from "@/views/BookView"
 import BookTime from "@/views/BookTime"
 import BookSeat from "@/views/BookSeat"
+import BookCheck from "@/views/BookCheck"
 
 
 Vue.use(VueRouter)
@@ -38,6 +40,16 @@ const routes = [
     path: "/book/booktime/bookseat",
     name: "BookSeat",
     component: BookSeat
+  },
+  {
+    path: "/book/booktime/bookseat/bookcheck",
+    name: "BookCheck",
+    component: BookCheck
+  },
+  {
+    path: "/congestion",
+    name: "CongestionView",
+    component: CongestionView
   },
 ]
 

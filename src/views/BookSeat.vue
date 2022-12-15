@@ -21,9 +21,15 @@
     <v-container>
       <v-img src="@/assets/seat_reservation.png"></v-img>
 
-      <v-select :items="items" label="席番号" dense outlined class="mt-4"></v-select>
+      <v-select v-model="selected" :items="items" label="席番号" dense outlined class="mt-4">
 
-      <v-btn to="/book/booktime/bookseat/bookcheck" block color="orange" class="white--text" large>
+        <template #search="{ attributes, events }">
+          <input class="vs__search" :required="!selected" v-bind="attributes" v-on="events" />
+        </template>
+
+      </v-select>
+
+      <v-btn v-if="selected" to="/book/booktime/bookseat/bookcheck" block color="orange" class="white--text" large>
         <v-icon>mdi-check</v-icon>
         <b>予約確定</b>
       </v-btn>
@@ -44,6 +50,7 @@ export default {
   },
   data: () => ({
     items: ["6"],
+    selected: "",
   }),
 }
 </script>
