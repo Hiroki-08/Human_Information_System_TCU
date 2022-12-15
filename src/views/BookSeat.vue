@@ -1,27 +1,14 @@
 <template>
   <v-main class=mx-4>
-    <v-app-bar
-      height=32
-      color="white"
-      dense
-      flat
-      fixed
-      max-width="390px"
-      app
-    >
-    <v-btn
-      icon
-      to="/book/booktime"
-    >
-      <v-icon>mdi-arrow-left</v-icon>
-    </v-btn>
+    <v-app-bar height=32 color="white" dense flat fixed max-width="390px" app>
+      <!-- <v-btn icon to="/book/booktime">
+        <v-icon>mdi-arrow-left</v-icon>
+      </v-btn> -->
       <v-spacer></v-spacer>
 
-      <v-container>
       <v-toolbar-title style="color:orange; font-size: small;">
-        <b>席選択</b>
+        <b>座席選択</b>
       </v-toolbar-title>
-    </v-container>
 
       <v-spacer></v-spacer>
 
@@ -32,46 +19,31 @@
     <h4 class=mt-2>予約可能座席</h4>
 
     <v-container>
-    <v-img src="@/assets/seat_reservation.png"></v-img>
+      <v-img src="@/assets/seat_reservation.png"></v-img>
 
-    <v-select
-          :items="items"
-          label="席番号"
-          dense
-          outlined
-          class="mt-4"
-        ></v-select>
+      <v-select :items="items" label="席番号" dense outlined class="mt-4"></v-select>
 
-    <v-btn
-      to=""
-      block
-      color="orange"
-      class="white--text"
-      large
-    >
-      <v-icon>mdi-check</v-icon>
-      <b>予約確定</b>
-    </v-btn>
+      <v-btn to="/book/booktime/bookseat/bookcheck" block color="orange" class="white--text" large>
+        <v-icon>mdi-check</v-icon>
+        <b>予約確定</b>
+      </v-btn>
 
-    <v-col class="pb-0">
-          <v-card 
-          height="70px"
-          flat
-          ></v-card>
-        </v-col>
-    
-      </v-container>
+      <v-col class="pb-0">
+        <v-card height="70px" flat></v-card>
+      </v-col>
+
+    </v-container>
   </v-main>
 </template>
 
 <script>
 export default {
-name: "BookSeat",
-components: {
+  name: "BookSeat",
+  components: {
 
-},
-data: () => ({
-      items: [ "6" ],
-    }),
+  },
+  data: () => ({
+    items: ["6"],
+  }),
 }
 </script>

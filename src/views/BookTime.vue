@@ -1,16 +1,15 @@
 <template>
   <v-main class=mx-4>
     <v-app-bar height=32 color="white" dense flat fixed max-width="390px" app>
-      <v-btn icon to="/book">
+      <!-- <v-btn icon to="/book">
         <v-icon>mdi-arrow-left</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-spacer></v-spacer>
 
-      <v-container>
-        <v-toolbar-title style="color:orange; font-size: small;">
-          <b>時刻選択</b>
-        </v-toolbar-title>
-      </v-container>
+      <v-toolbar-title style="color:orange; font-size: small;">
+        <b>時刻選択</b>
+      </v-toolbar-title>
+
 
       <v-spacer></v-spacer>
 
@@ -20,30 +19,38 @@
 
     <h4 class=mt-2>予約可能時間</h4>
 
-    <v-container>
-      <div v-for="(time) in timeLists" :key="time">
-        <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4">
-          {{ time }}
-          <v-spacer></v-spacer>
-          <v-icon>mdi-chevron-right</v-icon>
-        </v-btn>
-        <v-divider></v-divider>
-      </div>
-    </v-container>
+    <v-container class="pa-0">
 
+      <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4 mt-0">
+        12:15~12:50
+        <v-spacer></v-spacer>
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+      <v-divider></v-divider>
+
+      <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4 mt-1">
+        12:50~13:15
+        <v-spacer></v-spacer>
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+      <v-divider></v-divider>
+
+      <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4 mt-1">
+        13:15~13:40
+        <v-spacer></v-spacer>
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+      <v-divider></v-divider>
+
+    </v-container>
   </v-main>
 </template>
 
 <script>
 export default {
   name: "BookTime",
-  components: {},
-  data: () => ({
-    timeLists: [
-      "12:15~12:50",
-      "12:50~13:15",
-      "13:15~13:40"
-    ]
-  }),
-}
-</script>
+  components: {
+
+},
+  data: () => ({ value: 1 }),
+  }

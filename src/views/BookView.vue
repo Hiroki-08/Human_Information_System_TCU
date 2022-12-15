@@ -1,14 +1,6 @@
 <template>
   <v-main class=mx-4>
-    <v-app-bar
-      height=32
-      color="white"
-      dense
-      flat
-      fixed
-      max-width="390px"
-      app
-    >
+    <v-app-bar height=32 color="white" dense flat fixed max-width="390px" app>
       <v-spacer></v-spacer>
 
       <v-toolbar-title style="color:orange; font-size: small;">
@@ -25,12 +17,7 @@
     <v-card>
       <v-card-text>予約はありません</v-card-text>
     </v-card>
-    <v-btn
-      to="/book/booktime"
-      block
-      class="my-8 white--text"
-      color="orange"
-    >
+    <v-btn to="/book/booktime" block class="my-8 white--text" color="orange">
       <b>席を予約する</b>
     </v-btn>
 
@@ -40,10 +27,10 @@
 
 <script>
 export default {
-name: "BookView",
-components: {
+  name: "BookView",
+  components: {
 
-},
-data: () => ({ value: 1 }),
+  },
+  data: () => ({ value: 1 }),
 }
 </script>
