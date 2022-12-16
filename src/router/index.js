@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView'
 import CongestionView from "@/views/CongestionView"
 import MenuView from "@/views/MenuView"
 import MenuCurry from "@/views/MenuCurry"
+import MenuKaraage from "@/views/MenuKaraage"
 
 import BookView from "@/views/BookView"
 import BookTime from "@/views/BookTime"
@@ -33,6 +34,11 @@ const routes = [
     path: "/menu/curry",
     name: "MenuCurry",
     component: MenuCurry
+  },
+  {
+    path: "/menu/karaage",
+    name: "MenuKaraage",
+    component: MenuKaraage
   },
   {
     path: "/book",

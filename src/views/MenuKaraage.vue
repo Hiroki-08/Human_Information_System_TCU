@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
 
       <v-app-bar-title style="color:orange; font-size: small;">
-        <b>カレーライス</b>
+        <b>からあげ丼/弁当</b>
       </v-app-bar-title>
 
       <v-spacer></v-spacer>
@@ -14,33 +14,33 @@
     <v-divider></v-divider>
 
     <v-container class="px-0">
-      <v-img src="@/assets/curry.jpg" class="mb-4"></v-img>
+      <v-img src="@/assets/karaage.jpg" class="mb-4"></v-img>
 
       <v-app-bar flat color="white" dense>
         カテゴリー
         <v-spacer></v-spacer>
-        カレーライス
+        都市大からあげ専門店
       </v-app-bar>
       <v-divider></v-divider>
 
       <v-app-bar flat color="white" dense>
         メニュー
         <v-spacer></v-spacer>
-        カレーライス
+        からあげ丼/弁当
       </v-app-bar>
       <v-divider></v-divider>
 
       <v-app-bar flat color="white" dense>
         値段
         <v-spacer></v-spacer>
-        ¥310
+        ¥500
       </v-app-bar>
       <v-divider></v-divider>
 
       <v-app-bar flat color="white" dense>
         カロリー
         <v-spacer></v-spacer>
-        760kcal
+        1064kcal
       </v-app-bar>
       <v-divider></v-divider>
 
@@ -48,8 +48,7 @@
         アレルゲン
         <v-spacer></v-spacer>
         <v-card flat>
-          乳・⼩⻨・⽜⾁・⼤⾖・鶏⾁<br>
-          ・豚⾁・やまいも・りんご
+          ⼩⻨・鶏⾁
         </v-card>
       </v-app-bar>
 

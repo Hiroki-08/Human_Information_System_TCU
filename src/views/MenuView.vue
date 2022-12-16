@@ -25,7 +25,7 @@
         </v-col>
 
         <v-col class="pb-0">
-          <v-card to="/menu">
+          <v-card to="/menu/karaage">
             <v-img class="white--text align-end" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="100px"
               src="@/assets/karaage.jpg">
               <v-card-title>からあげ丼/弁当</v-card-title>
