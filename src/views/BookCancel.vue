@@ -14,14 +14,10 @@
     <v-divider></v-divider>
 
     <h4 class=mt-2>予約状況</h4>
-    <v-card>
+    <v-card class="mb-8">
       <v-card-title>12:15~12:50<br>6番席</v-card-title>
       <v-card-subtitle>に予約されています。</v-card-subtitle>
     </v-card>
-    <v-btn to="/book/booktime" block class="my-8 white--text" color="orange">
-      <b>予約をキャンセル</b>
-    </v-btn>
-
 
     <v-row justify="center">
       <v-dialog v-model="dialog" persistent max-width="290">

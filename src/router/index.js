@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import HomeView from '@/views/HomeView'
 import CongestionView from "@/views/CongestionView"
 import MenuView from "@/views/MenuView"
+import MenuCurry from "@/views/MenuCurry"
+
 import BookView from "@/views/BookView"
 import BookTime from "@/views/BookTime"
 import BookSeat from "@/views/BookSeat"
@@ -26,6 +28,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     // component: () => import(/* webpackChunkName: "home" */ '@/views/AboutView.vue')
+  },
+  {
+    path: "/menu/curry",
+    name: "MenuCurry",
+    component: MenuCurry
   },
   {
     path: "/book",

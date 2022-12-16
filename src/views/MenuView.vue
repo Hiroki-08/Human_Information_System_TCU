@@ -16,7 +16,7 @@
     <v-container fluid>
       <v-row>
         <v-col class="pb-0">
-          <v-card to="/menu">
+          <v-card to="/menu/curry">
             <v-img class="white--text align-end" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="100px"
               src="@/assets/curry.jpg">
               <v-card-title>カレーライス</v-card-title>
