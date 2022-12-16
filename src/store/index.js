@@ -6,11 +6,14 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     message: "Hello Vuex",
-    id: 314
+    id: "False"
   },
   getters: {
   },
   mutations: {
+    setState: function(state, id){
+      state.id = id;
+    }
   },
   actions: {
   },
