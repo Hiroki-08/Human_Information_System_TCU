@@ -1,6 +1,6 @@
 <template>
   <v-main class=mx-4>
-    <v-app-bar height=32 color="white" dense flat fixed app>
+    <v-app-bar height=32 max-width=390px color="white" dense flat fixed app>
       <v-spacer></v-spacer>
 
       <v-toolbar-title style="color:orange; font-size: small;">

@@ -28,14 +28,14 @@
       </v-btn>
       <v-divider></v-divider>
 
-      <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4 mt-1">
+      <v-btn text block to="" class="pt-6 pb-4 mt-1">
         12:50~13:15
         <v-spacer></v-spacer>
         <v-icon>mdi-chevron-right</v-icon>
       </v-btn>
       <v-divider></v-divider>
 
-      <v-btn text block to="/book/booktime/bookseat" class="pt-6 pb-4 mt-1">
+      <v-btn text block to="" class="pt-6 pb-4 mt-1">
         13:15~13:40
         <v-spacer></v-spacer>
         <v-icon>mdi-chevron-right</v-icon>

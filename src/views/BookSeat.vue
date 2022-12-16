@@ -1,6 +1,6 @@
 <template>
   <v-main class=mx-4>
-    <v-app-bar height=32 color="white" dense flat fixed app>
+    <v-app-bar height=32 max-width=390px color="white" dense flat fixed app>
       <!-- <v-btn icon to="/book/booktime">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn> -->

@@ -7,6 +7,7 @@ import BookView from "@/views/BookView"
 import BookTime from "@/views/BookTime"
 import BookSeat from "@/views/BookSeat"
 import BookCheck from "@/views/BookCheck"
+import BookCancel from "@/views/BookCancel"
 
 
 Vue.use(VueRouter)
@@ -45,6 +46,11 @@ const routes = [
     path: "/book/booktime/bookseat/bookcheck",
     name: "BookCheck",
     component: BookCheck
+  },
+  {
+    path: "/book/bookcancel",
+    name: "BookCancel",
+    component: BookCancel
   },
   {
     path: "/congestion",

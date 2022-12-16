@@ -1,6 +1,6 @@
 <template>
   <v-main class="mx-4">
-    <v-app-bar app height=32 color="white" dense flat fixed>
+    <v-app-bar app height=32 max-width=390px color="white" dense flat fixed>
       <v-spacer></v-spacer>
       <v-toolbar-title style="color:orange; font-size: small;">
         <b>ホーム</b>
@@ -34,9 +34,6 @@
     <v-card to="/congestion" flat class=mx-2>
       <v-img src="@/assets/congestion_situation_1.png"></v-img>
     </v-card>
-
-    <h2>{{ $store.state.id }}</h2>
-    <v-btn v-on:click="setState("True")">Set</v-btn>
 
     <v-col class="pb-0">
       <v-card height="70px" flat></v-card>
