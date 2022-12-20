@@ -19,8 +19,9 @@
     <h4 class=mt-2>予約可能座席</h4>
 
     <v-container>
-      <v-img src="@/assets/seat_reservation.png"></v-img>
 
+          <v-img src="@/assets/seat_reservation.png" v-bind="attrs" v-on="on"></v-img>
+        <v-text>※席番号は下から選択してください</v-text>
       <v-select v-model="selected" :items="items" label="席番号" dense outlined class="mt-4">
 
         <template #search="{ attributes, events }">
@@ -51,6 +52,7 @@ export default {
   data: () => ({
     items: ["6"],
     selected: "",
+    dialog: false,
   }),
 }
 </script>
