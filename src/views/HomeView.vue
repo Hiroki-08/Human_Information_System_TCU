@@ -33,6 +33,11 @@
     <h4 class=mt-2>混雑状況</h4>
     <v-card to="/congestion" flat class=mx-2>
       <v-img src="@/assets/congestion_situation_1.png"></v-img>
+
+      <v-card-text class="py-1 px-0 text-right">
+        <v-spacer></v-spacer>
+        各座席の混雑状況 >
+      </v-card-text>
     </v-card>
 
     <v-col class="pb-0">
@@ -52,8 +57,8 @@ export default {
     }
   },
   methods: {
-    setState: function( id ) {
-      this.$store.commit("changeId", id );
+    setState: function (id) {
+      this.$store.commit("changeId", id);
     }
   },
 }
