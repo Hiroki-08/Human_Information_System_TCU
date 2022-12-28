@@ -1,8 +1,8 @@
 <template>
   <v-main class="mx-4">
-    <v-app-bar app height=32 max-width=390px color="white" dense flat fixed>
+    <v-app-bar app height=32 max-width=390px color="orange" dense flat fixed>
       <v-spacer></v-spacer>
-      <v-toolbar-title style="color:orange; font-size: small;">
+      <v-toolbar-title style="color:white; font-size: small;">
         <b>ホーム</b>
       </v-toolbar-title>
       <v-spacer></v-spacer>

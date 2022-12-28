@@ -1,12 +1,12 @@
 <template>
   <v-main class=mx-4>
-    <v-app-bar height=32 max-width=390px color="white" dense flat fixed app>
+    <v-app-bar height=32 max-width=390px color="orange" dense flat fixed app>
       <!-- <v-btn icon to="/book/booktime">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn> -->
       <v-spacer></v-spacer>
 
-      <v-toolbar-title style="color:orange; font-size: small;">
+      <v-toolbar-title style="color:white; font-size: small;">
         <b>座席選択</b>
       </v-toolbar-title>
 
@@ -20,9 +20,9 @@
 
     <v-container>
 
-          <v-img src="@/assets/seat_reservation.png" v-bind="attrs" v-on="on"></v-img>
-        <v-text>※席番号は下から選択してください</v-text>
-      <v-select v-model="selected" :items="items" label="席番号" dense outlined class="mt-4">
+      <v-img src="@/assets/seat_reservation.png" v-bind="attrs" v-on="on"></v-img>
+      <div class="mt-3 mb-1">※ 席番号は下から選択してください。</div>
+      <v-select v-model="selected" :items="items" label="席番号" dense outlined class="mt-1">
 
         <template #search="{ attributes, events }">
           <input class="vs__search" :required="!selected" v-bind="attributes" v-on="events" />

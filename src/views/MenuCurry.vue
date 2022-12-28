@@ -1,9 +1,9 @@
 <template>
   <v-main class=mx-4>
-    <v-app-bar flat height=32 max-width=390px color="white" dense fixed app>
+    <v-app-bar flat height=32 max-width=390px color="orange" dense fixed app>
       <v-spacer></v-spacer>
 
-      <v-app-bar-title style="color:orange; font-size: small;">
+      <v-app-bar-title style="color:white; font-size: small;">
         <b>カレーライス</b>
       </v-app-bar-title>
 
